@@ -1,0 +1,22 @@
+# common
+device: ''
+logdir: '../testvis'
+modelpath: ''
+source: ''
+
+#Net:
+model: 'deeplabv3+'
+enc_type: 'mobilenetv2'
+dec_type: 'aspp'
+output_stride: 16
+output_channels: 3
+
+#Data:
+dataPath: '/home/hezl/laneDatasets/Bdd100k'
+dataset: 'bdd100k'
+size: (640, 360)
+batch_size: 1
+num_worker: 1
+
+
+

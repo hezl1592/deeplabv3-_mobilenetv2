@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+# Time    : 2020/7/14 19:19
+# Author  : zlich
+# Filename: model_test_common.py
+import os
+import torch
+
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+inputTensor = torch.rand(1, 3, 360, 640)
+
+
+def printNet(model):
+    print(model)
